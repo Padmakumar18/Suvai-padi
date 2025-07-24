@@ -6,7 +6,7 @@ const Navbar = () => (
   <BSNavbar expand="lg" bg="dark" variant="dark" sticky="top">
     <Container>
       <BSNavbar.Brand as={Link} to="/">
-        MyRestaurant
+        Suavi பாடி
       </BSNavbar.Brand>
       <BSNavbar.Toggle aria-controls="basic-navbar-nav" />
       <BSNavbar.Collapse id="basic-navbar-nav">
