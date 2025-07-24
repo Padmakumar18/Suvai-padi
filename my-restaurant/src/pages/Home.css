@@ -1,0 +1,31 @@
+/* Home.css */
+
+.home-page {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-section .highlight {
+  color: #ffc107;
+}
+
+.features-section h2 {
+  font-weight: bold;
+}
+
+.feature-box {
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
