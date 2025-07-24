@@ -8,7 +8,7 @@ const Home = () => {
       <section
         className="hero-section d-flex align-items-center justify-content-center text-center"
         style={{
-          backgroundImage: "url('/images/Home-page-background.webp')",
+          backgroundImage: "url('/images/Home/Home-page-background.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -48,7 +48,7 @@ const Home = () => {
           >
             <div className="col-lg-6 mb-4 mb-lg-0">
               <img
-                src="/images/Home-page-content-image-1.webp"
+                src="/images/Home/Home-page-content-image-1.webp"
                 alt="Restaurant Interior"
                 className="img-fluid rounded shadow-lg intro-image"
               />
@@ -96,7 +96,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6 mb-4 mb-lg-0">
               <img
-                src="/images/Home-page-content-image-2.webp"
+                src="/images/Home/Home-page-content-image-2.webp"
                 alt="Restaurant Interior"
                 className="img-fluid rounded shadow-lg intro-image"
               />
@@ -113,70 +113,52 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Why Choose TasteNest?
+            Why Choose Suvai பாடி?
           </motion.h2>
           <div className="row text-center g-4">
-            <motion.div
-              className="col-md-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              <div
-                className="rounded-4 text-white"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
-                  minHeight: "220px",
-                }}
+            {[
+              {
+                icon: "bi bi-star-fill",
+                title: "Top-Rated Chefs",
+                text: "Our chefs bring global flavors with local love to your plate.",
+              },
+              {
+                icon: "bi bi-award",
+                title: "Award-Winning Ambience",
+                text: "Experience luxurious dining in a warm, elegant setting.",
+              },
+              {
+                icon: "bi bi-clock-history",
+                title: "Timely Service",
+                text: "Our staff ensures a delightful experience, every time.",
+              },
+            ].map((card, index) => (
+              <motion.div
+                key={index}
+                className="col-md-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 * (index + 1) }}
               >
-                <i className="bi bi-star-fill fs-2"></i>
-                <h5 className="mt-3">Top-Rated Chefs</h5>
-                <p>
-                  Our chefs bring global flavors with local love to your plate.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="col-md-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-            >
-              <div
-                className="rounded-4 text-white"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)",
-                  minHeight: "220px",
-                }}
-              >
-                <i className="bi bi-award fs-2"></i>
-                <h5 className="mt-3">Award-Winning Ambience</h5>
-                <p>Experience luxurious dining in a warm, elegant setting.</p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="col-md-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <div
-                className="rounded-4 text-white"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%)",
-                  minHeight: "220px",
-                }}
-              >
-                <i className="bi bi-clock-history fs-2"></i>
-                <h5 className="mt-3">Timely Service</h5>
-                <p>Our staff ensures a delightful experience, every time.</p>
-              </div>
-            </motion.div>
+                <div
+                  className="p-4 rounded-4 text-center"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
+                    color: "#000",
+                    minHeight: "220px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <i className={`${card.icon} fs-2 mb-2`}></i>
+                  <h5 className="mt-2 mb-2">{card.title}</h5>
+                  <p className="mb-0">{card.text}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -195,7 +177,7 @@ const Home = () => {
             {[
               {
                 title: "Truffle Mushroom Risotto",
-                img: "https://images.unsplash.com/photo-1606914469220-0b1f47f7854b",
+                img: "/images/Home/Home-page-content-image-3.webp",
               },
               {
                 title: "Butter Garlic Prawns",
@@ -203,7 +185,7 @@ const Home = () => {
               },
               {
                 title: "Chocolate Lava Cake",
-                img: "https://images.unsplash.com/photo-1599785209707-f348b32f31f0",
+                img: "/images/Home/Home-page-content-image-4.webp",
               },
             ].map((item, index) => (
               <motion.div
