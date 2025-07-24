@@ -48,7 +48,7 @@ const Gallery = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           A glimpse into the flavors, textures, and ambiance we create at{" "}
-          <strong>TasteNest</strong>.
+          <strong>Suvai பாடி</strong>.
         </motion.p>
 
         <div className="row g-4">
