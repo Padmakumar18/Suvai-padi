@@ -21,8 +21,7 @@ const menuItems = {
       category: "North Indian",
       description: "Cottage cheese in a rich tomato-based gravy.",
       price: "₹180",
-      image:
-        "https://unsplash.com/photos/a-bowl-of-soup-with-a-spoon-in-it-7jERG_ACcQs",
+      image: "/images/Menu/Menu-page-content-image-1.WebP",
     },
     {
       id: 2,
@@ -30,7 +29,7 @@ const menuItems = {
       category: "Rice Dishes",
       description: "Aromatic basmati rice cooked with fresh vegetables.",
       price: "₹150",
-      image: "/images/veg-biryani.webp",
+      image: "/images/Menu/Menu-page-content-image-2.WebP",
     },
     {
       id: 3,
@@ -38,7 +37,7 @@ const menuItems = {
       category: "South Indian",
       description: "Crispy dosa filled with spiced potato mash.",
       price: "₹90",
-      image: "/images/masala-dosa.webp",
+      image: "/images/Menu/Menu-page-content-image-3.WebP",
     },
     {
       id: 4,
@@ -46,7 +45,7 @@ const menuItems = {
       category: "Indo-Chinese",
       description: "Crispy cauliflower tossed in spicy sauce.",
       price: "₹130",
-      image: "/images/gobi-manchurian.webp",
+      image: "/images/Menu/Menu-page-content-image-4.WebP",
     },
     {
       id: 5,
@@ -54,7 +53,7 @@ const menuItems = {
       category: "Rice Dishes",
       description: "Fragrant rice cooked with vegetables and spices.",
       price: "₹140",
-      image: "/images/veg-pulao.webp",
+      image: "/images/Menu/Menu-page-content-image-5.WebP",
     },
     {
       id: 6,
@@ -62,7 +61,7 @@ const menuItems = {
       category: "North Indian",
       description: "Spinach-based gravy with paneer cubes.",
       price: "₹170",
-      image: "/images/palak-paneer.webp",
+      image: "/images/Menu/Menu-page-content-image-6.WebP",
     },
     {
       id: 7,
@@ -70,7 +69,7 @@ const menuItems = {
       category: "South Indian",
       description: "Soft idlis soaked in hot sambar.",
       price: "₹80",
-      image: "/images/sambar-idli.webp",
+      image: "/images/Menu/Menu-page-content-image-7.WebP",
     },
     {
       id: 8,
@@ -78,7 +77,7 @@ const menuItems = {
       category: "North Indian",
       description: "Spicy chickpeas served with deep-fried bhature.",
       price: "₹160",
-      image: "/images/chole-bhature.webp",
+      image: "/images/Menu/Menu-page-content-image-8.WebP",
     },
     {
       id: 9,
@@ -86,7 +85,7 @@ const menuItems = {
       category: "Indo-Chinese",
       description: "Stir-fried noodles with vegetables and sauces.",
       price: "₹120",
-      image: "/images/hakka-noodles.webp",
+      image: "/images/Menu/Menu-page-content-image-9.WebP",
     },
     {
       id: 10,
@@ -94,7 +93,7 @@ const menuItems = {
       category: "Tandoor",
       description: "Grilled paneer marinated with spices.",
       price: "₹190",
-      image: "/images/paneer-tikka.webp",
+      image: "/images/Menu/Menu-page-content-image-10.WebP",
     },
   ],
   nonVeg: [
@@ -104,7 +103,7 @@ const menuItems = {
       category: "South Indian",
       description: "Spicy chicken curry from Tamil Nadu.",
       price: "₹220",
-      image: "/images/chicken-chettinad.webp",
+      image: "/images/Menu/Menu-page-content-image-11.WebP",
     },
     {
       id: 12,
@@ -112,7 +111,7 @@ const menuItems = {
       category: "Seafood",
       description: "Crispy shallow-fried marinated fish.",
       price: "₹200",
-      image: "/images/fish-fry.webp",
+      image: "/images/Menu/Menu-page-content-image-12.WebP",
     },
     {
       id: 13,
@@ -120,7 +119,7 @@ const menuItems = {
       category: "North Indian",
       description: "Creamy tomato-based chicken curry with butter.",
       price: "₹240",
-      image: "/images/butter-chicken.webp",
+      image: "/images/Menu/Menu-page-content-image-13.WebP",
     },
     {
       id: 14,
@@ -128,7 +127,7 @@ const menuItems = {
       category: "Seafood",
       description: "Juicy prawns cooked in spicy masala gravy.",
       price: "₹260",
-      image: "/images/prawn-masala.webp",
+      image: "/images/Menu/Menu-page-content-image-14.WebP",
     },
     {
       id: 15,
@@ -136,7 +135,7 @@ const menuItems = {
       category: "Rice Dishes",
       description: "Aromatic rice with tender chicken pieces.",
       price: "₹210",
-      image: "/images/chicken-biryani.webp",
+      image: "/images/Menu/Menu-page-content-image-15.WebP",
     },
     {
       id: 16,
@@ -144,7 +143,7 @@ const menuItems = {
       category: "Tandoor",
       description: "Chicken marinated in spices and grilled in tandoor.",
       price: "₹230",
-      image: "/images/tandoori-chicken.webp",
+      image: "/images/Menu/Menu-page-content-image-16.WebP",
     },
     {
       id: 17,
@@ -152,7 +151,7 @@ const menuItems = {
       category: "Semi Gravy",
       description: "Boiled eggs simmered in spicy curry.",
       price: "₹150",
-      image: "/images/egg-curry.webp",
+      image: "/images/Menu/Menu-page-content-image-17.WebP",
     },
     {
       id: 18,
@@ -160,7 +159,7 @@ const menuItems = {
       category: "Seafood",
       description: "Fresh crab roasted in spicy masala.",
       price: "₹280",
-      image: "/images/crab-roast.webp",
+      image: "/images/Menu/Menu-page-content-image-18.WebP",
     },
     {
       id: 19,
@@ -168,7 +167,7 @@ const menuItems = {
       category: "North Indian",
       description: "Chicken cooked in spicy kadai masala.",
       price: "₹230",
-      image: "/images/kadai-chicken.webp",
+      image: "/images/Menu/Menu-page-content-image-19.WebP",
     },
     {
       id: 20,
@@ -176,10 +175,11 @@ const menuItems = {
       category: "South Indian",
       description: "Tender mutton in a rich, spicy curry.",
       price: "₹270",
-      image: "/images/mutton-curry.webp",
+      image: "/images/Menu/Menu-page-content-image-20.WebP",
     },
   ],
 };
+
 const Section = ({ title, items, handleOrderClick }) => (
   <>
     <h3 className="mt-5 text-center fw-bold">{title}</h3>
@@ -252,12 +252,11 @@ const Menus = () => {
 Restaurant: My Restaurant  
 Dish: ${selectedDish.title}  
 Type: ${dishType}  
-📍 Address: ${form.address}   
+📍 Address: ${form.address}    
 📞 Contact: +91 9944035088  
 Thank you for your order! See you soon 😊
     `;
     console.log("📲 Message Sent:", message);
-    // alert("Order Confirmed! Check your phone for details.");
     toast.success("Order Confirmed! Check your phone for details.");
     handleClose();
   };

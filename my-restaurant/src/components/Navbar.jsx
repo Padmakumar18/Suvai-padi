@@ -17,11 +17,11 @@ const Navbar = () => (
           <Nav.Link as={Link} to="/menus">
             Menus
           </Nav.Link>
-          <Nav.Link as={Link} to="/contact">
-            Contact
-          </Nav.Link>
           <Nav.Link as={Link} to="/gallery">
             Gallery
+          </Nav.Link>
+          <Nav.Link as={Link} to="/contact">
+            Contact
           </Nav.Link>
         </Nav>
       </BSNavbar.Collapse>

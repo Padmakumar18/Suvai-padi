@@ -1,14 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import "./Home.css";
 
 const Home = () => {
+  const [heroLoaded, setHeroLoaded] = useState(false);
+
+  const features = [
+    {
+      icon: "🍽️",
+      title: "Delicious Menus",
+      desc: "Handcrafted dishes with the finest ingredients.",
+    },
+    {
+      icon: "🌿",
+      title: "Fresh Ingredients",
+      desc: "Locally sourced organic produce daily.",
+    },
+    {
+      icon: "🎉",
+      title: "Cozy Ambiance",
+      desc: "Perfect for gatherings, dates, and celebrations.",
+    },
+  ];
+
+  const specials = [
+    {
+      title: "Truffle Mushroom Risotto",
+      img: "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Home/nickolas-nikolic-uvlJSgwicII-unsplash.webp",
+    },
+    {
+      title: "Butter Garlic Prawns",
+      img: "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85",
+    },
+    {
+      title: "Chocolate Lava Cake",
+      img: "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Home/insung-yoon-BcldrN_YuU4-unsplash.webp",
+    },
+  ];
+
+  const reasons = [
+    {
+      icon: "bi bi-star-fill",
+      title: "Top-Rated Chefs",
+      text: "Our chefs bring global flavors with local love to your plate.",
+    },
+    {
+      icon: "bi bi-award",
+      title: "Award-Winning Ambience",
+      text: "Experience luxurious dining in a warm, elegant setting.",
+    },
+    {
+      icon: "bi bi-clock-history",
+      title: "Timely Service",
+      text: "Our staff ensures a delightful experience, every time.",
+    },
+  ];
+
   return (
     <div className="home-page">
       <section
         className="hero-section d-flex align-items-center justify-content-center text-center"
         style={{
-          backgroundImage: "url('/images/Home/Home-page-background.webp')",
+          backgroundImage:
+            "url('https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Home/james-coleman-6sBOJRlN8mY-unsplash.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -37,73 +93,71 @@ const Home = () => {
         </motion.div>
       </section>
 
-      <section id="intro" className="intro-section">
-        <div className="container py-5">
-          <motion.div
-            className="row align-items-center"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="col-lg-6 mb-4 mb-lg-0">
-              <img
-                src="/images/Home/Home-page-content-image-1.webp"
-                alt="Restaurant Interior"
-                className="img-fluid rounded shadow-lg intro-image"
-              />
-            </div>
-            <div className="col-lg-6 text-center text-lg-start">
-              <h2 className="display-6 fw-bold ">
-                Experience Culinary Excellence
-              </h2>
-              <p className="lead text-dark mt-3">
-                <strong>Suvai பாடி</strong> blends tradition and innovation to
-                serve you world-class cuisine with a homely twist.
-              </p>
-              <p className="text-muted">
-                Join us in an immersive dining experience curated by passionate
-                chefs, an intimate atmosphere, and unforgettable flavors.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      <section id="intro" className="intro-section">
-        <div className="container py-5">
-          <motion.div
-            className="row align-items-center"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="col-lg-6 text-center text-lg-start">
-              <h2 className="display-6 fw-bold">
-                Discover the Art of Fine Dining
-              </h2>
-              <p className="lead text-dark mt-3">
-                At <strong>Suvai பாடி</strong>, timeless flavors meet modern
-                culinary craftsmanship. Every dish is a tribute to our roots
-                prepared with love, precision, and authentic ingredients.
-              </p>
-              <p className="text-muted">
-                Join us to indulge in a sensory journey where tradition is
-                reimagined, the ambiance feels like home, and every bite tells a
-                story of heritage and harmony.
-              </p>
-            </div>
-            <div className="col-lg-6 mb-4 mb-lg-0">
-              <img
-                src="/images/Home/Home-page-content-image-2.webp"
-                alt="Restaurant Interior"
-                className="img-fluid rounded shadow-lg intro-image"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      {[1, 2].map((section, idx) => (
+        <section key={idx} id="intro" className="intro-section">
+          <div className="container py-5">
+            <motion.div
+              className="row align-items-center"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              {idx % 2 === 0 ? (
+                <>
+                  <div className="col-lg-6 mb-4 mb-lg-0">
+                    <img
+                      src="https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Home/photo-1600891964599-f61ba0e24092%20(1).webp"
+                      alt="Restaurant Interior"
+                      className="img-fluid rounded shadow-lg intro-image"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="col-lg-6 text-center text-lg-start">
+                    <h2 className="display-6 fw-bold">
+                      Experience Culinary Excellence
+                    </h2>
+                    <p className="lead text-dark mt-3">
+                      <strong>Suvai பாடி</strong> blends tradition and
+                      innovation to serve you world-class cuisine with a homely
+                      twist.
+                    </p>
+                    <p className="text-muted">
+                      Join us in an immersive dining experience curated by
+                      passionate chefs, an intimate atmosphere, and
+                      unforgettable flavors.
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="col-lg-6 text-center text-lg-start">
+                    <h2 className="display-6 fw-bold">
+                      Discover the Art of Fine Dining
+                    </h2>
+                    <p className="lead text-dark mt-3">
+                      At <strong>Suvai பாடி</strong>, timeless flavors meet
+                      modern culinary craftsmanship.
+                    </p>
+                    <p className="text-muted">
+                      Every dish is a tribute to our roots prepared with love,
+                      precision, and authentic ingredients.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 mb-4 mb-lg-0">
+                    <img
+                      src="https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Home/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.webp"
+                      alt="Restaurant Interior"
+                      className="img-fluid rounded shadow-lg intro-image"
+                      loading="lazy"
+                    />
+                  </div>
+                </>
+              )}
+            </motion.div>
+          </div>
+        </section>
+      ))}
 
       <section className="choose-us-section py-5 bg-light">
         <div className="container">
@@ -116,23 +170,7 @@ const Home = () => {
             Why Choose Suvai பாடி?
           </motion.h2>
           <div className="row text-center g-4">
-            {[
-              {
-                icon: "bi bi-star-fill",
-                title: "Top-Rated Chefs",
-                text: "Our chefs bring global flavors with local love to your plate.",
-              },
-              {
-                icon: "bi bi-award",
-                title: "Award-Winning Ambience",
-                text: "Experience luxurious dining in a warm, elegant setting.",
-              },
-              {
-                icon: "bi bi-clock-history",
-                title: "Timely Service",
-                text: "Our staff ensures a delightful experience, every time.",
-              },
-            ].map((card, index) => (
+            {reasons.map((card, index) => (
               <motion.div
                 key={index}
                 className="col-md-4"
@@ -174,20 +212,7 @@ const Home = () => {
             Today's Specials
           </motion.h2>
           <div className="row g-4">
-            {[
-              {
-                title: "Truffle Mushroom Risotto",
-                img: "/images/Home/Home-page-content-image-3.webp",
-              },
-              {
-                title: "Butter Garlic Prawns",
-                img: "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85",
-              },
-              {
-                title: "Chocolate Lava Cake",
-                img: "/images/Home/Home-page-content-image-4.webp",
-              },
-            ].map((item, index) => (
+            {specials.map((item, index) => (
               <motion.div
                 key={index}
                 className="col-md-4"
@@ -200,6 +225,7 @@ const Home = () => {
                     src={`${item.img}?auto=format&fit=crop&w=800&q=80`}
                     alt={item.title}
                     className="card-img-top"
+                    loading="lazy"
                   />
                   <div className="card-body text-center">
                     <h5 className="card-title">{item.title}</h5>
@@ -275,23 +301,7 @@ const Home = () => {
         <div className="container">
           <h2 className="mb-4">Why Choose Us?</h2>
           <div className="row">
-            {[
-              {
-                icon: "🍽️",
-                title: "Delicious Menus",
-                desc: "Handcrafted dishes with the finest ingredients.",
-              },
-              {
-                icon: "🌿",
-                title: "Fresh Ingredients",
-                desc: "Locally sourced organic produce daily.",
-              },
-              {
-                icon: "🎉",
-                title: "Cozy Ambiance",
-                desc: "Perfect for gatherings, dates, and celebrations.",
-              },
-            ].map((item, index) => (
+            {features.map((item, index) => (
               <motion.div
                 className="col-md-4 mb-4"
                 key={index}
