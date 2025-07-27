@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./Home.css";
 
 const Home = () => {
+  const navigate = useNavigate();
   const [heroLoaded, setHeroLoaded] = useState(false);
 
   const [loading, setLoading] = useState(true);
@@ -107,9 +109,9 @@ const Home = () => {
           </h1>
           <p className="lead">Where every dish tells a story.</p>
           <motion.a
-            href="#intro"
             whileHover={{ scale: 1.05 }}
             className="btn btn-outline-light mt-3"
+            onClick={() => navigate("/Menus")}
           >
             Explore Menu
           </motion.a>

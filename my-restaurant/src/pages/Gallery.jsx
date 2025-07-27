@@ -3,31 +3,23 @@ import { motion } from "framer-motion";
 import "./Gallery.css";
 
 const galleryImages = [
-  {
-    src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80",
-    title: "Signature Pasta",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80",
-    title: "Sizzling Grill",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
-    title: "Chef’s Special Dessert",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600891964974-7e8f4bfcaa3c?auto=format&fit=crop&w=800&q=80",
-    title: "Elegant Dining",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80",
-    title: "Cozy Ambiance",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
-    title: "Freshly Baked Breads",
-  },
+  { src: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d", title: "Grilled Steak" },
+  { src: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092", title: "Chef’s Platter" },
+  { src: "https://images.unsplash.com/photo-1529042410759-befb1204b468", title: "Pizza Delight" },
+  { src: "https://images.unsplash.com/photo-1565895405130-6d5d8c7f8248", title: "Tropical Cocktails" },
+  { src: "https://images.unsplash.com/photo-1613145993484-94d37b37e6be", title: "Biryani Bowl" },
+  { src: "https://images.unsplash.com/photo-1506354666786-959d6d497f1a", title: "Rustic Dining" },
+  { src: "https://images.unsplash.com/photo-1613141431742-46bcfcb360ed", title: "Sushi Selection" },
+  { src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836", title: "Plated Dessert" },
+  { src: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f", title: "Garden Ambiance" },
+  { src: "https://images.unsplash.com/photo-1604145559206-3e8db6d67c5d", title: "Pasta Serving" },
+  { src: "https://images.unsplash.com/photo-1633113212235-3ffbd794c0b9", title: "Mocktail Vibes" },
+  { src: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90", title: "Dining Ambiance" },
+  { src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4", title: "Fresh Breads" },
+  { src: "https://images.unsplash.com/photo-1615484477860-7f042159f5db", title: "Table Setup" },
+  { src: "https://images.unsplash.com/photo-1514514784547-38bf0f58faab", title: "Classic Burger" }
 ];
+
 
 const Gallery = () => {
   return (

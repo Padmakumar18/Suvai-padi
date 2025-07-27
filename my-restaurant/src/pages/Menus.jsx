@@ -21,7 +21,8 @@ const menuItems = {
       category: "North Indian",
       description: "Cottage cheese in a rich tomato-based gravy.",
       price: "₹180",
-      image: "/images/Menu/Menu-page-content-image-1.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/zablanca_clicks-7jERG_ACcQs-unsplash.webp",
     },
     {
       id: 2,
@@ -29,7 +30,8 @@ const menuItems = {
       category: "Rice Dishes",
       description: "Aromatic basmati rice cooked with fresh vegetables.",
       price: "₹150",
-      image: "/images/Menu/Menu-page-content-image-2.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/mario-raj-n1z3gc9gJ8I-unsplash%20(1).webp",
     },
     {
       id: 3,
@@ -37,7 +39,8 @@ const menuItems = {
       category: "South Indian",
       description: "Crispy dosa filled with spiced potato mash.",
       price: "₹90",
-      image: "/images/Menu/Menu-page-content-image-3.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/deepal-tamang-5oF7d_hPJG4-unsplash.webp",
     },
     {
       id: 4,
@@ -45,7 +48,8 @@ const menuItems = {
       category: "Indo-Chinese",
       description: "Crispy cauliflower tossed in spicy sauce.",
       price: "₹130",
-      image: "/images/Menu/Menu-page-content-image-4.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/close-up-delicious-asian-food.webp",
     },
     {
       id: 5,
@@ -53,7 +57,8 @@ const menuItems = {
       category: "Rice Dishes",
       description: "Fragrant rice cooked with vegetables and spices.",
       price: "₹140",
-      image: "/images/Menu/Menu-page-content-image-5.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/white-rice-with-vegetables-black-bowl-wooden-table.webp",
     },
     {
       id: 6,
@@ -61,121 +66,64 @@ const menuItems = {
       category: "North Indian",
       description: "Spinach-based gravy with paneer cubes.",
       price: "₹170",
-      image: "/images/Menu/Menu-page-content-image-6.WebP",
-    },
-    {
-      id: 7,
-      title: "Sambar Idli",
-      category: "South Indian",
-      description: "Soft idlis soaked in hot sambar.",
-      price: "₹80",
-      image: "/images/Menu/Menu-page-content-image-7.WebP",
-    },
-    {
-      id: 8,
-      title: "Chole Bhature",
-      category: "North Indian",
-      description: "Spicy chickpeas served with deep-fried bhature.",
-      price: "₹160",
-      image: "/images/Menu/Menu-page-content-image-8.WebP",
-    },
-    {
-      id: 9,
-      title: "Hakka Noodles",
-      category: "Indo-Chinese",
-      description: "Stir-fried noodles with vegetables and sauces.",
-      price: "₹120",
-      image: "/images/Menu/Menu-page-content-image-9.WebP",
-    },
-    {
-      id: 10,
-      title: "Paneer Tikka",
-      category: "Tandoor",
-      description: "Grilled paneer marinated with spices.",
-      price: "₹190",
-      image: "/images/Menu/Menu-page-content-image-10.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/delicious-pakistani-dish-high-angle.webp",
     },
   ],
   nonVeg: [
     {
-      id: 11,
+      id: 7,
       title: "Chicken Chettinad",
       category: "South Indian",
       description: "Spicy chicken curry from Tamil Nadu.",
       price: "₹220",
-      image: "/images/Menu/Menu-page-content-image-11.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/bowl-homemade-stew-close-up.webp",
     },
     {
-      id: 12,
+      id: 8,
       title: "Fish Fry",
       category: "Seafood",
       description: "Crispy shallow-fried marinated fish.",
       price: "₹200",
-      image: "/images/Menu/Menu-page-content-image-12.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/front-view-tasty-fried-fish-dark-surface-meal-pepper-cooking-fry-seafood-sea-meat-food-salad-dish.webp",
     },
     {
-      id: 13,
+      id: 9,
       title: "Butter Chicken",
       category: "North Indian",
       description: "Creamy tomato-based chicken curry with butter.",
       price: "₹240",
-      image: "/images/Menu/Menu-page-content-image-13.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/goulash-soup-wood.webp",
     },
     {
-      id: 14,
-      title: "Prawn Masala",
-      category: "Seafood",
-      description: "Juicy prawns cooked in spicy masala gravy.",
-      price: "₹260",
-      image: "/images/Menu/Menu-page-content-image-14.WebP",
-    },
-    {
-      id: 15,
+      id: 10,
       title: "Chicken Biryani",
       category: "Rice Dishes",
       description: "Aromatic rice with tender chicken pieces.",
       price: "₹210",
-      image: "/images/Menu/Menu-page-content-image-15.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/high-angle-pakistan-meal-composition.webp",
     },
     {
-      id: 16,
+      id: 11,
       title: "Tandoori Chicken",
       category: "Tandoor",
       description: "Chicken marinated in spices and grilled in tandoor.",
       price: "₹230",
-      image: "/images/Menu/Menu-page-content-image-16.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/side-view-chicken-kebab-with-red-onion-greens-dried-barberry-pita.webp",
     },
     {
-      id: 17,
-      title: "Egg Curry",
-      category: "Semi Gravy",
-      description: "Boiled eggs simmered in spicy curry.",
-      price: "₹150",
-      image: "/images/Menu/Menu-page-content-image-17.WebP",
-    },
-    {
-      id: 18,
-      title: "Crab Roast",
-      category: "Seafood",
-      description: "Fresh crab roasted in spicy masala.",
-      price: "₹280",
-      image: "/images/Menu/Menu-page-content-image-18.WebP",
-    },
-    {
-      id: 19,
+      id: 12,
       title: "Kadai Chicken",
       category: "North Indian",
       description: "Chicken cooked in spicy kadai masala.",
       price: "₹230",
-      image: "/images/Menu/Menu-page-content-image-19.WebP",
-    },
-    {
-      id: 20,
-      title: "Mutton Curry",
-      category: "South Indian",
-      description: "Tender mutton in a rich, spicy curry.",
-      price: "₹270",
-      image: "/images/Menu/Menu-page-content-image-20.WebP",
+      image:
+        "https://xbjnwlnzkqzmikxtvlvu.supabase.co/storage/v1/object/public/restaurant-images/restaurant-images/Menu/chicken-stir-fried-chili-along-with-bell-pepper-tomatoes-carrots.webp",
     },
   ],
 };
