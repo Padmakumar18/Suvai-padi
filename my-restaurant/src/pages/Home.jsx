@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -6,6 +6,29 @@ import "./Home.css";
 
 const Home = () => {
   const [heroLoaded, setHeroLoaded] = useState(false);
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const images = Array.from(document.images);
+    let loaded = 0;
+
+    if (images.length === 0) {
+      setLoading(false);
+    }
+
+    images.forEach((img) => {
+      if (img.complete) {
+        loaded++;
+        if (loaded === images.length) setLoading(false);
+      } else {
+        img.onload = img.onerror = () => {
+          loaded++;
+          if (loaded === images.length) setLoading(false);
+        };
+      }
+    });
+  }, []);
 
   const features = [
     {

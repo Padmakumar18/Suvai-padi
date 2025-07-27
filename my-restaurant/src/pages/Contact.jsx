@@ -62,11 +62,11 @@ const Contact = () => {
             >
               <h4 className="mb-3 fw-bold">Get in Touch</h4>
               <p>
-                <FaMapMarkerAlt className="me-2" /> 123 Main Street, Coimbatore,
+                <FaMapMarkerAlt className="me-2" /> 123 Main Street, Udumlapet,
                 Tamil Nadu
               </p>
               <p>
-                <FaPhoneAlt className="me-2" /> +91 98765 43210
+                <FaPhoneAlt className="me-2" /> +91 99440 35088
               </p>
               <p>
                 <FaInstagram className="me-2" />
