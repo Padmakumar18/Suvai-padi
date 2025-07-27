@@ -143,7 +143,7 @@ const Section = ({ title, items, handleOrderClick }) => (
               <Card.Img
                 variant="top"
                 src={item.image}
-                className="rounded-top-4"
+                className="rounded-top-4 uniform-menu-image"
               />
               <Card.Body className="text-center">
                 <Card.Title className="fw-bold">{item.title}</Card.Title>
